@@ -2,8 +2,8 @@ import src.crud as crud
 import src.schemas as schemas
 from sqlalchemy.orm import Session
 from src.auth import router as auth_router
-from src.database.database import engine, Base, get_db
 from fastapi.security import OAuth2PasswordBearer
+from src.database.database import engine, Base, get_db
 from fastapi import FastAPI, Depends, HTTPException, status
 
 Base.metadata.create_all(bind=engine)
