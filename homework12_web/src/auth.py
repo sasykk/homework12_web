@@ -1,8 +1,8 @@
 import src.crud as crud
 import src.schemas as schemas
-from database.database import get_db
 from datetime import timedelta
 from sqlalchemy.orm import Session
+from database.database import get_db
 from fastapi.security import OAuth2PasswordRequestForm
 from fastapi import APIRouter, Depends, HTTPException, status
 
